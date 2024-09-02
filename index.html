@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="navbar">
+    <a class="brand" href="#">Weather App</a>
+    <div class="menu">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Guide</a>
+      <form class="search-form" role="search">
+        <input id="city" type="search" placeholder="Search City" aria-label="Search">
+        <button id="submit" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="content">
+    <h1>Weather in <span id="cityName">Your Location</span></h1>
+    <div class="card-container">
+      <div class="card">
+        <div class="card-header">Temperature</div>
+        <div class="card-body">
+          <h2 id="temp2">--°C</h2>
+          <p>Current: <span id="temp">--</span>°C</p>
+          <p>Min: <span id="min_temp">--</span>°C</p>
+          <p>Max: <span id="max_temp">--</span>°C</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">Humidity</div>
+        <div class="card-body">
+          <h2 id="humidity2">--%</h2>
+          <p>Wind Degree: <span id="wind_degrees">--</span>°</p>
+          <p>Feels Like: <span id="feels_like">--</span>°C</p>
+          <p>Humidity: <span id="humidity">--</span>%</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">Wind</div>
+        <div class="card-body">
+          <h2 id="wind_speed2">-- km/h</h2>
+          <p>Speed: <span id="wind_speed">--</span> km/h</p>
+          <p>Sunrise: <span id="sunrise">--</span></p>
+          <p>Sunset: <span id="sunset">--</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2024 Weather App by Md Arshad. All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
