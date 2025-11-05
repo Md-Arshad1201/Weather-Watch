@@ -34,15 +34,14 @@ A modern, responsive weather application that provides real-time weather informa
 
 ## 📁 Project Structure
 
+```
 weather-watch/
 │
 ├── index.html
 ├── style.css
 ├── script.js
 └── README.md
-
-yaml
-Copy code
+```
 
 ---
 
@@ -57,125 +56,138 @@ Copy code
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/your-username/weather-watch.git
-Navigate to the project directory:
+   ```
 
-bash
-Copy code
-cd weather-watch
-Open index.html in your web browser or start a local server:
+2. **Navigate to the project directory:**
+   ```bash
+   cd weather-watch
+   ```
 
-Using Python:
+3. **Open `index.html`** in your web browser or start a local server:
 
-bash
-Copy code
-python -m http.server 8000
-Using Node.js:
+   **Using Python:**
+   ```bash
+   python -m http.server 8000
+   ```
 
-bash
-Copy code
-npx http-server
-Visit http://localhost:8000 in your browser.
+   **Using Node.js:**
+   ```bash
+   npx http-server
+   ```
 
-🌐 API Integration
-This project uses the OpenWeatherMap API to fetch real-time weather data.
+4. **Visit in your browser:**
+   ```
+   http://localhost:8000
+   ```
 
-🧩 API Endpoints Used
-City-based weather:
+---
 
-javascript
-Copy code
+## 🌐 API Integration
+
+This project uses the **OpenWeatherMap API** to fetch real-time weather data.
+
+### 🧩 API Endpoints Used
+
+**City-based weather:**
+```javascript
 https://api.openweathermap.org/data/2.5/weather?q={city}&appid={API_KEY}&units=metric
-Geolocation-based weather:
+```
 
-javascript
-Copy code
+**Geolocation-based weather:**
+```javascript
 https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API_KEY}&units=metric
-🎯 How to Use
-Search by City — Enter any city name in the search bar and click "Search"
+```
 
-Auto-detection — Allow location access to get weather for your current location
+---
 
-View Details — Check temperature, humidity, wind conditions, and sunrise/sunset times
+## 🎯 How to Use
 
-Responsive Design — Works on all devices with adaptive layout
+1. **Search by City** — Enter any city name in the search bar and click "Search"  
+2. **Auto-detection** — Allow location access to get weather for your current location  
+3. **View Details** — Check temperature, humidity, wind conditions, and sunrise/sunset times  
+4. **Responsive Design** — Works on all devices with adaptive layout  
 
-📊 Weather Metrics Displayed
-🌡️ Temperature: Current, Min, Max, and Feels Like
+---
 
-💧 Humidity: Current humidity percentage
+## 📊 Weather Metrics Displayed
 
-💨 Wind: Speed and direction
+- 🌡️ **Temperature:** Current, Min, Max, and Feels Like  
+- 💧 **Humidity:** Current humidity percentage  
+- 💨 **Wind:** Speed and direction  
+- ☀️ **Sun Times:** Sunrise and sunset times (local time)  
+- 🎯 **Location:** City name and geolocation data  
 
-☀️ Sun Times: Sunrise and sunset times (local time)
+---
 
-🎯 Location: City name and geolocation data
+## 🔒 Environment Variables
 
-🔒 Environment Variables
-To run this project, you'll need to add your OpenWeatherMap API key:
+To run this project, you'll need to add your **OpenWeatherMap API key**.
 
-Get a free API key from OpenWeatherMap
+1. Get a free API key from [OpenWeatherMap](https://openweathermap.org/api)  
+2. Replace the API key inside `script.js`:  
+   ```javascript
+   const apiKey = "your_actual_api_key_here";
+   ```
 
-Replace the API key inside script.js:
+---
 
-javascript
-Copy code
-const apiKey = "your_actual_api_key_here";
-🚀 Deployment
+## 🚀 Deployment
+
 This static website can be deployed on any web hosting service.
 
-💡 Recommended Platforms
-Netlify — Drag and drop deployment
+### 💡 Recommended Platforms
 
-Vercel — GitHub integration
+- **Netlify** — Drag and drop deployment  
+- **Vercel** — GitHub integration  
+- **GitHub Pages** — Free for public repositories  
+- **Render** — Static site hosting  
 
-GitHub Pages — Free for public repositories
+### 🪄 Steps for Netlify Deployment
 
-Render — Static site hosting
+1. Fork this repository  
+2. Go to [https://netlify.com](https://netlify.com)  
+3. Connect your GitHub account  
+4. Select this repository  
+5. Click **Deploy**  
 
-🪄 Steps for Netlify Deployment
-Fork this repository
+---
 
-Go to https://netlify.com
+## 🤝 Contributing
 
-Connect your GitHub account
-
-Select this repository
-
-Click Deploy
-
-🤝 Contributing
 Contributions, issues, and feature requests are welcome!
 
-Fork the Project
+1. **Fork the Project**  
+2. **Create your Feature Branch:**  
+   ```bash
+   git checkout -b feature/AmazingFeature
+   ```
+3. **Commit your Changes:**  
+   ```bash
+   git commit -m 'Add some AmazingFeature'
+   ```
+4. **Push to the Branch:**  
+   ```bash
+   git push origin feature/AmazingFeature
+   ```
+5. **Open a Pull Request**
 
-Create your Feature Branch
+---
 
-bash
-Copy code
-git checkout -b feature/AmazingFeature
-Commit your Changes
+## 📝 License
 
-bash
-Copy code
-git commit -m 'Add some AmazingFeature'
-Push to the Branch
+This project is licensed under the **MIT License**.
 
-bash
-Copy code
-git push origin feature/AmazingFeature
-Open a Pull Request
+---
 
-📝 License
-This project is licensed under the MIT License.
+## 👨‍💻 Author
 
-👨‍💻 Author
-Md Arshad
+**Md Arshad**  
+- GitHub: [@Md-Arshad1201](https://github.com/Md-Arshad1201)  
+- Project Link: [Weather Watch](https://github.com/Md-Arshad1201/weather-watch)
 
-GitHub: @Md-Arshad1201
+---
 
-Project Link: https://github.com/Md-Arshad1201/weather-watch
+## 🙏 Acknowledgments
 
-🙏 Acknowledgments
-OpenWeatherMap — for providing the weather API
-
-Icons and UI inspiration from modern web design standards
+- [OpenWeatherMap](https://openweathermap.org) — for providing the weather API  
+- Icons and UI inspiration from modern web design standards
